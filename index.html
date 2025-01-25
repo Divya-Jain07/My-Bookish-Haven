@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Divya Jain">
+    <meta name="description" content="The home page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="Stylesheet" href="style.css">
+   <style>
+    button{
+        height: 40%;
+        width: 60%;
+        background-color: #16404D ;
+        color:white;
+        font-size: 30px;
+        padding: 20px;
+        padding-bottom: 40px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    button:hover{
+        color:goldenrod;
+    }
+    
+   </style>
+</head>
+<body>
+    <header>
+        <h1>My Bookish Haven</h1>
+        <p style="padding-left: 250px; padding-right: 250px;"> Discover a world of stories and inspiration-
+            Your ultimate space to track reads, explore captivating quotes, 
+            share reviews, and browse a curated library of ebooks. 
+            Dive into the magic of words and let every page spark something new.</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="ebook.html">Ebooks available</a>
+        <a href="review.html">Reviews</a>
+        <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQmq5zGJ_82-q9Xl7MeGg8mx-7nY_yiy1SdxVHSULZQII4nEhHGU25vggu0HO9Q_fwar1BCTtlgKC2C/pubhtml"  target="_blank">Review now!</a>
+        <a href="quotes.html">Quotes...</a>
+        <a href="login.html"><img src="loggin.png" height="30px" width="30px" ></a>
+
+    </nav>
+    <div class="parent">
+        <div class="left">
+            <div class="child" >
+                <!--REVIEW PART COMES HERE   can use div if no semantic purpose-->
+                <h2>Click here to see the Recent read Review page....</h2>
+                <button onclick="document.location='review.html'" style="margin: 0 auto">Click me!</button>
+                </div>
+            <div class="child">
+                <!--THIS SECTION IS FOR BEST RATED BOOK SO FAR 
+                No, change of plan--- use review now and embed google sheets for the same
+                -->
+                <h2>Review your recent read!</h2>
+                <br>
+                <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQmq5zGJ_82-q9Xl7MeGg8mx-7nY_yiy1SdxVHSULZQII4nEhHGU25vggu0HO9Q_fwar1BCTtlgKC2C/pubhtml" 
+                title="Google Sheets" width="99.9%" height="888" frameborder="0"></iframe>
+                <!---->
+            </div>
+        </div>
+        <div class="aside">
+            <div>
+               <h1 style="text-align: center;">Quotes page!</h1>
+               <iframe src="quotes.html" width="100%" height="94%" id="iframe"></iframe>
+                <!--The current read must be in img format with starting date-->
+                <!--This section is for current read-->
+            </div>
+        </div>
+    </div>
+<footer>
+        &copy; Divya Jain
+        <address>
+            Contact me:
+            <a href="mailto:djain6756@gmail.com" style="color: white; ">djain6756@gmail.com</a>
+        </address>
+
+</footer>
+    
+    
+</body>
+</html>

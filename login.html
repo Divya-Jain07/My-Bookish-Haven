@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body{
+            background-color: #FAF4ED;
+        }
+        button{
+        height: 15px;
+        width: 220px;
+        background-color: #7D8471 ;
+        color:white;
+        font-size: 20px;
+        padding: 20px;
+        margin: 20px;
+        padding-bottom: 40px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    button:hover{
+        color:goldenrod;
+    }
+    table{table-layout: auto; font-size: larger; }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Enter me to continue!</h1>
+    <form action="demo_form.php" method="post">
+        <fieldset style="border: 1px solid #16404D">
+            <legend style="font-size: larger;">My Bookish Haven</legend>
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" name="name" required ></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type="number" name="pass" required ></td>
+        </tr>
+        <tr>
+            <td>Enter Email id:</td>
+            <td><input type="email" name="email"></td>
+        </tr>
+        <tr>
+            <table>
+                <tr>
+                    <td>Do you like bookS?? &nbsp; &nbsp; &nbsp;&nbsp;</td>
+                    <td><input type="radio" value="book">Yes</td>
+                    <td><input type="radio" value="book">No</td>
+                    <td><input type="radio" value="book">Maybe!?</td>
+                </tr>
+            </table>
+            <br>
+        </tr>
+            <tr>
+                <td>Why do you like books??</td>
+                <td><textarea value="Address" rows="2" cols="50" ></textarea></td>
+            </tr>
+            <table>
+                <td>Your favourite genre: &nbsp; &nbsp;</td>
+                <td><input type="checkbox" value="event" > Fiction</td>
+                <td><input type="checkbox" value="event" > Non-fiction</td>
+                <td><input type="checkbox" value="event" > Self-help</td>
+            </table>
+            <br><br>
+            <tr>
+                <td><input type="reset"></td>
+            </tr>      
+    </table>
+    </fieldset>
+    </form>
+    <button onclick="document.location='index.html'">Submit to proceed</button>
+    </div>
+</body>
+</html>
